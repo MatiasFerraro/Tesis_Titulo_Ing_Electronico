@@ -1,0 +1,64 @@
+[PROJECT]
+Target=placa_central.hex
+Development_Mode=
+Processor_Text=PIC18F4550
+ToolSuite=CCS
+Processor=0x4550
+CCSVersion=5.015
+Compiler=PCH
+[D:\Users\matias-pc\Desktop\sistema de riego\sistema_riego_tesis\sistema_riego_tesis_placas_nueva-v0.0\placa_central\placa_central]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=placa_central.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=placa_central.c
+2=
+3=
+4=
+5=_ds1307.c
+6=manejo_pulsadores_reles.c
+7=
+[Directories]
+Include=D:\Program Files\PICC\devices\;D:\Program Files\PICC\drivers\;D:\Program Files\PICC\drivers\D:\Program Files\PICC\devices\
+Library=
+LinkerScript=
+[defines]
+enabled=0
+D1=
+V1=
+[fileformats]
+forcecoff=0
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+[Target Data]
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+FileList=placa_central.c
+[placa_central.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[Units]
+Count=1
+1=placa_central (main)

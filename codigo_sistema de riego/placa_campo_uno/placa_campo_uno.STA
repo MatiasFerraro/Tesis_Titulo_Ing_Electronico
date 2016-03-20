@@ -1,0 +1,81 @@
+
+ROM used:   6960/32768 (21%)
+            6960/32768 (21%) including unused fragments
+
+            2.1 Average locations per line
+            9.0 Average locations per statement
+
+RAM used:   235/2048 (11%) at main() level
+            287/2048 (14%) worst case
+
+Stack used: 6 worst case (2 in main + 4 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  517   388  50  placa_campo_uno.c
+  837     0   0  ..\..\..\..\..\..\..\Program Files\PICC\devices\18F4550.h
+   63    24   3  adc.c
+  423     0   0  ..\..\..\..\..\..\..\Program Files\PICC\drivers\string.h
+   32     0   0  ..\..\..\..\..\..\..\Program Files\PICC\drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\..\Program Files\PICC\drivers\ctype.h
+ 1351   359  47  ..\..\..\..\..\..\..\Program Files\PICC\drivers\stdlib.h
+----- -----
+ 3251   771 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   0    1             @delay_ms1
+0     34   0    1             @delay_us1
+0     42   0    1             @PUTCHAR_BIU_1
+0     28   0    0    59  1.6  adc_init
+0    148   1    0   270  1.8  leer_ADC0_ADC1_ADC2_ADC3
+0    452   3    4   156  2.7  convertir_ADC0_ADC1_ADC2_ADC3_a_tension
+0     54   0    2             @ITOF
+0    246   2   11             @MULFF
+0    350   3   14             @DIVFF
+0    444   3    4   238  2.9  convertir_ADC0_ADC1_ADC2_ADC3_a_porcentaje
+0     60   0    4             @SFTOI
+0    114   1    9   272  5.5  strcat
+0    676   5   16  1882 11.0  atoi32
+0     66   0    2   156  3.9  STATE_STORE
+0     66   0    6             @WRITEBITA
+0     44   0    1    24  1.2  activar_rele
+0     42   0    1    24  1.2  desactivar_rele
+0     76   1    3   191  4.9  envio_dato
+0    644   5    2  1730  3.9  armar_trama
+0     36   0    0             @const1051
+0     32   0    1             @SPRINTF
+0    196   1    9             @PRINTF_LU_1054
+0     44   0    3             @DIV88
+0    126   1    2             @PRINTF_U_1054
+0    986   7    3  4383  7.9  deco_tramaRx
+0    420   3    2  2923  7.9  ciclo_histeresis_control_tiempo
+0    380   3    0   134  1.8  MAIN
+0     30   0    0             @const1088
+0    402   3    0  3226  7.4  maquina_de_estado_de_comunicacion
+0    486   3    0  3514  6.9  maquina_de_estado_de_aplicacion
+0     50   0    0             @goto12394
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               16
+    Statements              771
+    Comments                790
+    Volume (V)              27639
+    Difficulty (D)          73.3
+    Effort to implement (E) 2025552
+    Time to implement (T)   31 hours, 16 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   110
+    Maintainability (MI)    18
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  6814  25804  
+
+
+

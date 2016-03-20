@@ -1,0 +1,289 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016-017 AN_0
+018-019 AN_1
+01A-01B AN_2
+01C-01D AN_3
+01E-021 AN0_V
+022-025 AN1_V
+026-029 AN2_V
+02A-02D AN3_V
+02E     AN_0_porcentaje
+02F     AN_1_porcentaje
+030     AN_2_porcentaje
+031     AN_3_porcentaje
+032-033 strtok.save
+034-037 _Randseed
+038     @CURRENT_TASK
+039-040 valor_humedad
+041-042 hum_i_1
+043-044 hum_i_2
+045-046 hum_i_3
+047-048 hum_i_4
+049-04A hum_f_1
+04B-04C hum_f_2
+04D-04E hum_f_3
+04F-050 hum_f_4
+051-052 item
+053-054 n_menus
+055-056 i_rx
+057-058 dato_completo
+059     regando_1
+05A     regando_2
+05B     regando_3
+05C     regando_4
+05D     regando_t
+05E     sube_1
+05F     sube_2
+060     sube_3
+061     sube_4
+062     baja_1
+063     baja_2
+064     baja_3
+065     baja_4
+066-083 dato_tx
+084-0A1 dato_rx
+0A2-0A7 cadena
+0A8-0AC dato_aux
+0AD-0B1 dato_aux2
+0B2     numero
+0B3     fin_pal
+0B4     dat_comp
+0B5     j
+0B6     s
+0B7     m
+0B8     estado_siguiente
+0B9     estado_siguiente_riego
+0BA     hora
+0BB     minutos
+0BC     minima
+0BD     maxima
+0BE     hora_inicio
+0BF     minutos_inicio
+0C0     hora_fin
+0C1     minutos_fin
+0C2-0C5 salida
+0C6     manual
+0C7-0C8 comando_rx
+0C9-0CA comando_tx
+0CB-0CC estado_valvula_1_placa_1
+0CD-0CE estado_valvula_2_placa_1
+0CF-0D0 humedad_ciclo_uno
+0D1-0D2 humedad_ciclo_dos
+0D3     tipo_riego
+0D4     tipo_riego_anterior
+0D5     minima_guardada
+0D6     maxima_guardada
+0D7     entro_manual
+0D8     regando_1_anterior
+0D9     regando_2_anterior
+0DA     regando_t_anterior
+0DB-0DC @sprintf_string
+0DD-0E3 @TASKINFO1_2_2_0_0
+0E4-0EA @TASKINFO2_2_2_0_0
+0EB     @READBITA.P1
+0EC-0ED @READBITA.P1
+10B     STATE_STORE.@SCRATCH1
+10C     STATE_STORE.@SCRATCH2
+10D-10E atoi32.s
+10D-10E @PRINTF_LU_1054.P1
+10D-10E strcat.s1
+10D-110 @SFTOI.P1
+10D-110 @MULFF.P2
+10D     @PRINTF_U_1054.P3
+10D-10E @ITOF.P4
+10D     envio_dato.i_tx
+10D     activar_rele.pin
+10D     @delay_ms1.P1
+10D     desactivar_rele.pin
+10D     convertir_ADC0_ADC1_ADC2_ADC3_a_tension.@SCRATCH1
+10D     convertir_ADC0_ADC1_ADC2_ADC3_a_porcentaje.@SCRATCH1
+10D     armar_trama.@SCRATCH1
+10D     deco_tramaRx.@SCRATCH1
+10D     ciclo_histeresis_control_tiempo.@SCRATCH1
+10E     envio_dato.fin_dto
+10E     @PRINTF_U_1054.P1
+10E     @WRITEBITA.P2
+10E     convertir_ADC0_ADC1_ADC2_ADC3_a_tension.@SCRATCH2
+10E     convertir_ADC0_ADC1_ADC2_ADC3_a_porcentaje.@SCRATCH2
+10E     armar_trama.@SCRATCH2
+10E     deco_tramaRx.@SCRATCH2
+10E     ciclo_histeresis_control_tiempo.@SCRATCH2
+10F     @DIV88.P1
+10F     @WRITEBITA.P2
+10F-110 strcat.s2
+10F-112 atoi32.result
+10F     convertir_ADC0_ADC1_ADC2_ADC3_a_tension.@SCRATCH3
+10F     convertir_ADC0_ADC1_ADC2_ADC3_a_porcentaje.@SCRATCH3
+10F     envio_dato.@SCRATCH1
+10F     @PRINTF_LU_1054.@SCRATCH1
+10F     deco_tramaRx.@SCRATCH3
+110     @DIV88.P1
+110-111 @WRITEBITA.P2
+110     @PUTCHAR_BIU_1.P3
+110     convertir_ADC0_ADC1_ADC2_ADC3_a_tension.@SCRATCH4
+110     convertir_ADC0_ADC1_ADC2_ADC3_a_porcentaje.@SCRATCH4
+110     @PRINTF_LU_1054.@SCRATCH2
+111     @delay_us1.P1
+111-114 @MULFF.P2
+111-114 @DIVFF.P3
+111-112 strcat.s
+111     @PRINTF_LU_1054.@SCRATCH3
+111     @DIV88.@SCRATCH1
+112     @PRINTF_LU_1054.@SCRATCH4
+113     atoi32.sign
+113     strcat.@SCRATCH1
+113     @PRINTF_LU_1054.@SCRATCH5
+114     atoi32.base
+114     strcat.@SCRATCH2
+114     @PRINTF_LU_1054.@SCRATCH6
+115     atoi32.index
+115-118 @DIVFF.P1
+115     @MULFF.@SCRATCH1
+115     strcat.@SCRATCH3
+115     @PRINTF_LU_1054.@SCRATCH7
+116     atoi32.c
+116     @SPRINTF.P1
+116     @MULFF.@SCRATCH2
+117     @MULFF.@SCRATCH3
+117     atoi32.@SCRATCH1
+118     atoi32.@SCRATCH2
+119     @DIVFF.@SCRATCH1
+119     atoi32.@SCRATCH3
+11A     @DIVFF.@SCRATCH2
+11A     atoi32.@SCRATCH4
+11B     @DIVFF.@SCRATCH3
+11B     atoi32.@SCRATCH5
+11C     @DIVFF.@SCRATCH4
+11C     atoi32.@SCRATCH6
+11D     @DIVFF.@SCRATCH5
+11E     @DIVFF.@SCRATCH6
+F6D     UCON
+F6D.3   USBEN
+F6F     UCFG
+F6F.3   UTRDIS
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  @const1051.call
+0000BA  @const1088.call
+0000D8  STATE_STORE
+00011A  @delay_ms1
+000142  adc_init
+00015E  @delay_us1
+000180  @PUTCHAR_BIU_1
+0001AA  envio_dato
+0001F6  atoi32
+00049A  deco_tramaRx
+000874  leer_ADC0_ADC1_ADC2_ADC3
+000908  @ITOF
+00093E  @MULFF
+000A34  @DIVFF
+000B92  convertir_ADC0_ADC1_ADC2_ADC3_a_tension
+000D56  @SFTOI
+000D92  convertir_ADC0_ADC1_ADC2_ADC3_a_porcentaje
+000F4E  @SPRINTF
+000F6E  @PRINTF_LU_1054
+001032  strcat
+0010A4  @DIV88
+0010D0  @PRINTF_U_1054
+00114E  armar_trama
+0013D2  maquina_de_estado_de_comunicacion
+001564  ciclo_histeresis_control_tiempo
+001708  @WRITEBITA
+00174A  activar_rele
+001776  desactivar_rele
+0017A0  maquina_de_estado_de_aplicacion
+001986  @goto12394
+0019B8  MAIN
+0019B8  @cinit1
+001A56  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    D:\Users\matias-pc\Desktop\_back_1\TESIS_SISTEMA_RIEGO_ARCHIVOS_PROTOTIPO\sistema_riego_tesis_placas_nueva-v31\placa_campo_dos\
+
+Project Files:
+    placa_dos.c                                             [22-abr-15 07:12  CRC=FE1828B1]
+    ..\..\..\..\..\..\..\Program Files\PICC\devices\18F4550.h [12-nov-13 15:35  CRC=5337E248]
+    adc.c                                                   [10-mar-15 07:26  CRC=A70FB60C]
+    ..\..\..\..\..\..\..\Program Files\PICC\drivers\string.h [14-jul-11 11:13  CRC=23EDEC8F]
+    ..\..\..\..\..\..\..\Program Files\PICC\drivers\stddef.h [16-jul-10 10:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\..\Program Files\PICC\drivers\ctype.h [03-ene-08 14:55  CRC=2D1F019F]
+    ..\..\..\..\..\..\..\Program Files\PICC\drivers\stdlib.h [08-jun-11 15:39  CRC=0B6669CF]
+
+Source signature=E9B66F3D
+
+Units:
+    placa_dos (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Task Info:
+    Ticks: 100 ns
+    Cycle: 5, ms
+
+Tasks:
+    maquina_de_estado_de_aplicacion
+    maquina_de_estado_de_comunicacion
+
+Task Schedule:
+     2,5 ms  1082:maquina_de_estado_de_aplicacion
+     2,5 ms  1084:maquina_de_estado_de_comunicacion
+    Sync to next 5, ms
+
+Output Files:
+    XREF file:   placa_dos.xsym
+    Errors:      placa_dos.err
+    Ext Symbols: placa_dos.esym
+    INHX32:      placa_dos.hex
+    Symbols:     placa_dos.sym
+    List:        placa_dos.lst
+    Debug/COFF:  placa_dos.cof
+    Project:     placa_dos.ccspjt
+    Call Tree:   placa_dos.tre
+    Statistics:  placa_dos.STA

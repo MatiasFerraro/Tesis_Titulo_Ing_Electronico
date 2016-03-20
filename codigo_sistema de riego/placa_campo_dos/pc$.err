@@ -1,0 +1,3 @@
+--- Info 300 "placa_dos.c" Line 34(1,5): More info:   *3* I/O error 6
+--- Info 300 "placa_dos.c" Line 34(1,5): More info:   *3* Access violation at address 06684D9E in module 'PCH.dll'. Read of address 63616C6C
+--- Info 300 "placa_dos.c" Line 34(1,5): Mo

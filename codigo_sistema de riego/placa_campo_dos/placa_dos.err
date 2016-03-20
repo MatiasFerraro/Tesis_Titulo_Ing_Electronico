@@ -1,0 +1,19 @@
+>>> Warning 208 "D:\Users\matias-pc\Desktop\_back_1\TESIS_SISTEMA_RIEGO_ARCHIVOS_PROTOTIPO\sistema_riego_tesis_placas_nueva-v31\placa_campo_dos\adc.c" Line 5(1,9): Function not void and does not return a value  adc_init
+>>> Warning 208 "placa_dos.c" Line 87(1,12): Function not void and does not return a value  STATE_STORE
+>>> Warning 207 "placa_dos.c" Line 226(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 228(30,31): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 236(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 237(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 238(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 244(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 246(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 247(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 248(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 254(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 256(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 257(31,32): Code has no effect
+>>> Warning 207 "placa_dos.c" Line 258(31,32): Code has no effect
+>>> Warning 201 "placa_dos.c" Line 377(1,1): Assignment inside relational expression
+      Memory usage:   ROM=21%      RAM=11% - 14%
+      0 Errors,  16 Warnings.
+Build Successful.

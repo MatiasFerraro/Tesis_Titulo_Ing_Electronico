@@ -1,0 +1,11 @@
+>>> Warning 203 "C:\OneDrive\tesis\codigo\sistema_riego_tesis_placas_nueva-v31\placa_central\_ds1307.c" Line 233(1,1): Condition always TRUE
+>>> Warning 208 "placa_central.c" Line 225(1,12): Function not void and does not return a value  STATE_STORE
+>>> Warning 207 "placa_central.c" Line 417(34,35): Code has no effect
+>>> Warning 207 "placa_central.c" Line 736(1,1): Code has no effect
+>>> Warning 202 "placa_central.c" Line 80(34,44): Variable never used:   STATE_01_A
+>>> Warning 202 "placa_central.c" Line 107(5,9): Variable never used:   sem1
+>>> Warning 202 "placa_central.c" Line 153(5,13): Variable never used:   leo_dato
+>>> Warning 202 "placa_central.c" Line 154(5,22): Variable never used:   veces_ver_humedad
+      Memory usage:   ROM=99%      RAM=23% - 31%
+      0 Errors,  8 Warnings.
+Build Successful.
